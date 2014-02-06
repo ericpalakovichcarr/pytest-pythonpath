@@ -1,9 +1,15 @@
 from setuptools import setup
 
+description = 'pytest plugin for adding to the PYTHONPATH from command line or configs.'
+try:
+    long_description = open("README.md").read()
+except:
+    long_description = description
+
 setup(
     name='pytest-pythonpath',
-    description='pytest plugin for adding to the PYTHONPATH from command line or configs.',
-    long_description=open("README.md").read(),
+    description=description,
+    long_description=long_description,
     version='0.1',
     author='Eric Palakovich Carr',
     author_email='carreric@gmail.com',
