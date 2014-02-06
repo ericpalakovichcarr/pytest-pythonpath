@@ -1,0 +1,14 @@
+Thumbs.db
+.DS_Store
+.noseids
+*.pyc
+*.log
+*.swp
+pip.log
+local_settings.py
+
+virenv
+.idea
+build
+dist
+*.egg-info
