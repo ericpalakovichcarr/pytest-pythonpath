@@ -8,8 +8,6 @@ Install with pip::
 
     pip install pytest-pythonpath
 
-## Uninstallation
-
 Uninstall with pip::
 
     pip uninstall pytest-pythonpath
