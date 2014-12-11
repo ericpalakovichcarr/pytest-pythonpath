@@ -11,5 +11,5 @@ def pytest_addoption(parser):
 
 
 def pytest_configure(config):
-    for path in config.getini("python_paths"):
-        sys.path.append(str(path))
+    for path in reversed(config.getini("python_paths")):
+        sys.path.insert(0, str(path))

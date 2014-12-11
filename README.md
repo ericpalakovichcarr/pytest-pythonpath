@@ -18,7 +18,7 @@ Usage
 -----
 
 Add a line in your pytest.ini file with a key of `python_paths` and provide a space seperated list of paths
-you want added to the PYTHONPATH before any tests run:
+you want inserted to the beginning of the PYTHONPATH before any tests run:
 
     [pytest]
     python_paths = your/path/apps your/path/libs
