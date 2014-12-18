@@ -14,7 +14,6 @@ def pytest_addoption(parser):
 
 
 def pytest_configure(config):
-    print config.getini("site_dirs")
     for path in reversed(config.getini("python_paths")):
         sys.path.insert(0, str(path))
     for path in config.getini("site_dirs"):
