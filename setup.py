@@ -10,7 +10,7 @@ setup(
     name='pytest-pythonpath',
     description=description,
     long_description=long_description,
-    version='0.3',
+    version='0.5',
     author='Eric Palakovich Carr',
     author_email='carreric@gmail.com',
     url='https://github.com/bigsassy/pytest-pythonpath',
