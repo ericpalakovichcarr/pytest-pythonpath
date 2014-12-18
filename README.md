@@ -23,4 +23,12 @@ you want inserted to the beginning of the PYTHONPATH before any tests run:
     [pytest]
     python_paths = your/path/apps your/path/libs
 
+If you'd like to have `.pth` files be processed too, use `site_dir`s instead:
+
+    [pytest]
+    site_dirs = your/path/apps your/path/libs
+
+This will cause the `addsitedir` function to be called on each path instead of a simple `sys.path.insert(0, path)`.
+Note that using the `site_dirs` will not place your specified paths in front of existing paths.
+
 Once this is added to your pytest.ini, you can use the py.test command as you normally would.
