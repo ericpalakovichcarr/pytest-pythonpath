@@ -23,7 +23,7 @@ you want inserted to the beginning of the PYTHONPATH before any tests run:
     [pytest]
     python_paths = your/path/apps your/path/libs
 
-If you'd like to have `.pth` files be processed too, use `site_dir`s instead:
+If you'd like to have `.pth` files be processed too, use `site_dirs` instead:
 
     [pytest]
     site_dirs = your/path/apps your/path/libs
