@@ -13,8 +13,8 @@ def pytest_addoption(parser):
                   default=[])
 
 
-def pytest_configure(config):
-    for path in reversed(config.getini("python_paths")):
+def pytest_load_initial_conftests(args, early_config, parser):
+    for path in reversed(early_config.getini("python_paths")):
         sys.path.insert(0, str(path))
-    for path in config.getini("site_dirs"):
+    for path in early_config.getini("site_dirs"):
         site.addsitedir(str(path))
