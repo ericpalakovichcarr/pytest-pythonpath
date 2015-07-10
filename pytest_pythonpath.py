@@ -2,6 +2,8 @@ import sys
 import os
 import site
 
+import pytest
+
 
 def pytest_addoption(parser):
     # py.test has an issue where the cwd is not in the PYTHONPATH. Fix it here.
@@ -13,6 +15,7 @@ def pytest_addoption(parser):
                   default=[])
 
 
+@pytest.mark.tryfirst
 def pytest_load_initial_conftests(args, early_config, parser):
     for path in reversed(early_config.getini("python_paths")):
         sys.path.insert(0, str(path))
