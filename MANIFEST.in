@@ -1,0 +1,4 @@
+include LICENSE.txt
+include test_pythonpath.py
+include pytest.ini
+recursive-include test_path *
