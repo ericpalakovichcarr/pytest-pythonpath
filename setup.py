@@ -11,7 +11,7 @@ setup(
     description=description,
     long_description=long_description,
     license='MIT',
-    version='0.7.2',
+    version='0.7.3',
     author='Eric Palakovich Carr',
     author_email='carreric@gmail.com',
     url='https://github.com/bigsassy/pytest-pythonpath',
