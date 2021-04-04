@@ -10,6 +10,7 @@ setup(
     name='pytest-pythonpath',
     description=description,
     long_description=long_description,
+    long_description_content_type='text/markdown',
     license='MIT',
     version='0.7.3',
     author='Eric Palakovich Carr',
