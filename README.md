@@ -1,6 +1,8 @@
 pytest-pythonpath
 =================
 
+**NOTE:**  This plugin is obsolete as of pytest 7.0.0.  Thanks to [this PR](https://github.com/pytest-dev/pytest/pull/9134) from [Brian Okken](https://github.com/okken), you can now modify the PYTHONPATH using the `pythonpath` configuration option.  See documentation here: https://docs.pytest.org/en/7.0.x/reference/reference.html#confval-pythonpath
+
 This is a py.test plugin for adding to the PYTHONPATH from the pytests.ini file before tests run.
 
 Installation
