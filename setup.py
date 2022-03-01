@@ -18,7 +18,7 @@ setup(
     url='https://github.com/bigsassy/pytest-pythonpath',
     py_modules=['pytest_pythonpath'],
     entry_points={'pytest11': ['pythonpath = pytest_pythonpath']},
-    install_requires=['pytest>=2.5.2,<7'],
+    install_requires=['pytest>=2.5.2,<8'],
     python_requires='>=2.6, <4',
     classifiers=[
         "Development Status :: 5 - Production/Stable",
